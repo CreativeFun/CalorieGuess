@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+<script src = "/static/script.js"></script>
+
+<div class="center">
+    <p1 alt="Title"> {{ name_of_dish }} </p1>
+</div>
+
+</div>
+
+<div class="center">
+    <img src="{{ user_image }}" alt="User Image">
+</div>
+<div class="center">
+    <span id="rangeValue">0</span>
+</div>
+<div class="center">
+    <form id="mainform" action="/submit" methods=['GET']>
+        <Input class="range" type="range" name="slider" id="slider" value="0" min="0" max="1000" onChange="rangeSlide(this.value)"
+               onmousemove="rangeSlide(this.value)"></Input>
+        <Input type="submit" class="center" name= "valuefromslider" value="Tryme"></Input>
+    </form>
+</div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p id="modal-text">Wartość z pola slider: {{ slider_value }}</p>
+    </div>
+  </div>
+
+</body>
+</html>

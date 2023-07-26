@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.main_form {
+    display:block;
+}
+.center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+::placeholder {
+  opacity: 0.5;
+}
+
+* {
+  display: flex-row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #151515;
+}
+
+p1 {
+  font-size: 6em;
+  color: #999;
+  font-weight: 400;
+}
+
+#rangeValue {
+  font-size: 6em;
+  color: #999;
+  font-weight: 400;
+}
+.range {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 12px;
+  -webkit-appearance: none;
+  background: #111;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #00fd0a;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -407px 0 0 400px #00fd0a;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Ukryty domyślnie */
+  position: fixed; /* Pozycja ustalona */
+  z-index: 1; /* Wyświetl na wierzchu */
+  left: 0;
+  top: 0;
+  width: 100%; /* Pełna szerokość */
+  height: 100%; /* Pełna wysokość */
+  overflow: auto; /* Włącz przewijanie, jeśli jest potrzebne */
+  background-color: rgba(0, 0, 0, 0.4); /* Czarny z przezroczystością */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% od góry i wyśrodkowany */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Może być większa lub mniejsza, w zależności od rozmiaru ekranu */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
